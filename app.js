@@ -1,12 +1,11 @@
-function countCoinFlip(Nth) {
-    let heads = 0; 
-    let tails = 0;
-    for (let i = 0; i < Nth; i++) {
+function countCoinFlip(flips) {
+    let heads = 0, tails = 0;
+    for (let coins = 0; coins < flips; coins++) {
         (Math.floor(Math.random() * 2)) ? heads++ : tails++
     }
     return {
-        "heads": heads,
-        "tails": tails
+        heads,
+        tails
     }
 }
 
